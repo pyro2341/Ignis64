@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qfrh8/viAkbo6cWP3fYrXbMzDtRs2GbklaKj5eNefxmRtbeZPW4M5g+vZAISfRhc06/Vmdly5BXd1hm1somwJg==",
+  "success": true,
+  "projectFilePath": "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\Ignis64.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\levi\\.nuget\\packages\\raylib-cs\\4.2.0.2\\raylib-cs.4.2.0.2.nupkg.sha512",
+    "C:\\Users\\levi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
