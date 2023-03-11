@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\Ignis64.csproj": {}
+    "D:\\levi\\Documents\\GitHub\\Ignis64\\game\\Ignis64.csproj": {}
   },
   "projects": {
-    "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\Ignis64.csproj": {
+    "D:\\levi\\Documents\\GitHub\\Ignis64\\game\\Ignis64.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\Ignis64.csproj",
+        "projectUniqueName": "D:\\levi\\Documents\\GitHub\\Ignis64\\game\\Ignis64.csproj",
         "projectName": "Ignis64",
-        "projectPath": "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\Ignis64.csproj",
+        "projectPath": "D:\\levi\\Documents\\GitHub\\Ignis64\\game\\Ignis64.csproj",
         "packagesPath": "C:\\Users\\levi\\.nuget\\packages\\",
-        "outputPath": "D:\\levi\\Documents\\GitHub\\Ignis64\\src\\obj\\",
+        "outputPath": "D:\\levi\\Documents\\GitHub\\Ignis64\\game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\levi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Raylib-cs": {
               "target": "Package",
               "version": "[4.2.0.2, )"

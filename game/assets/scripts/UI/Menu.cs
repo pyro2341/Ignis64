@@ -5,10 +5,11 @@ namespace Ignis64.UI;
 public class Menu{
     public Button[] buttons;
     public Panel[] panels;
+    public Text[] text;
     public bool active;
 
 #pragma warning disable 8618
-    public Menu(Button[]? buttons, Panel[]? panels, bool active){
+    public Menu(Button[]? buttons, Panel[]? panels, Text[]? text, bool active){
         if (buttons != null)
         {
             this.buttons=buttons;
@@ -16,6 +17,10 @@ public class Menu{
         if (panels != null)
         {
             this.panels=panels;
+        }
+        if (text != null)
+        {
+            this.text = text;
         }
         this.active = active;
     }
@@ -30,6 +35,12 @@ public class Menu{
         if (panels != null){
             foreach (Panel panel in panels){
                 Raylib.DrawRectangleRec(panel.GetRect(), panel.color);
+            }
+        }
+        if (text != null){
+            foreach (Text textobj in text)
+            {
+                Raylib.DrawTextEx(textobj.font, textobj.value, textobj.position, textobj.scale, 1, textobj.color);
             }
         }
     }
