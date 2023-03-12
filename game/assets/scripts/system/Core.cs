@@ -9,7 +9,6 @@ public static class Core
     public static int Resolution = 50;
     private static void Main(string[] args){
         Raylib.InitWindow((int)AspectRatio.X*Resolution, (int)AspectRatio.Y*Resolution, " Ignis-64 : The Game Engine");
-        menu = new UI.Menu(null, null, new UI.Text[] { new UI.Text(100, 100, 30, Color.WHITE, "HELLO WORLD!", "4x4.ttf") }, true);
         while (!Raylib.WindowShouldClose())
         {
             Raylib.BeginDrawing();
