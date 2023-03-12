@@ -6,6 +6,7 @@ public class Menu{
     public Button[] buttons;
     public Panel[] panels;
     public Text[] text;
+    public InputField[] inputFields;
     public bool active;
 
 #pragma warning disable 8618
@@ -43,7 +44,11 @@ public class Menu{
                 Raylib.DrawTextEx(textobj.font, textobj.value, textobj.position, textobj.scale, 1, textobj.color);
             }
         }
+        if (inputFields != null){
+            foreach (InputField input in inputFields)
+            {
+                Raylib.DrawTextEx(input.text.font, input.text.value, input.text.position, input.text.scale, 1, input.text.color);
+            }
+        }
     }
-
-    
 }

@@ -11,12 +11,12 @@ public class Text
     public string value;
     public Font font;
 
-    public Text(float X, float Y, int scale, Color color, string value)
+    public Text(float X, float Y, int scale, Color color, string value, string FileName)
     {
         position = new Vector2(X, Y);
-        this.font = Raylib.LoadFont("assets/textures/fonts/4x4-pixel-font.otf");
         this.scale = scale;
         this.color = color;
         this.value = value;
+        this.font = Raylib.LoadFont("assets/textures/fonts/"+FileName);
     }
 }
